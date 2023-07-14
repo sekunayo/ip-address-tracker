@@ -5,11 +5,10 @@ const search = css({
     backgroundColor: "#FFF",
     boxShadow: "0px 50px 50px -25px rgba(0, 0, 0, 0.10)",
     height: "58px",
-    width: "50%",
+    width: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    zIndex: "40",
 
     "& input": {
         width: "100%",

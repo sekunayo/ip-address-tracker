@@ -87,6 +87,25 @@ const backgroundContainer = css({
   }
 })
 
+const appHeader = css({
+  color: "#FFFFFF",
+  fontSize: "32px",
+  fontStyle: "normal",
+  fontWeight: 500,
+  lineHeight: "30px",
+  letterSpacing: "1px",
+  textAlign: "center"
+})
+
+const appHeaderContainer = css({
+  display: "flex",
+  flexDirection: "column",
+  gap: "24px",
+  zIndex: "40",
+  marginBottom: "40px",
+  width: "50%"
+})
+
 export const styles = {
   app,
   appPositioned,
@@ -96,5 +115,7 @@ export const styles = {
   appPostionedTextContainer,
   appSearchContainer,
   appPositionedTextContent,
-  backgroundContainer
+  backgroundContainer,
+  appHeader,
+  appHeaderContainer
 }

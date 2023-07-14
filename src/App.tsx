@@ -18,7 +18,10 @@ function App() {
   return (
     <div className={styles.app}>
       <div className={styles.appSearchContainer}>
-        <Search />
+        <div className={styles.appHeaderContainer}>
+          <h3 className={styles.appHeader}>IP Address Tracker</h3>
+          <Search />
+        </div>
         <div className={styles.appPositionedContainer}>
           <div className={styles.appPositioned}>
             <ul className={styles.appPostionedTextContainer}>
