@@ -11,6 +11,12 @@ const appPositioned = css({
   width: "80vw",
   height: "163px",
   padding: "0px 40px",
+
+  "@media only screen and (max-width:1174px)": {
+    height: "auto",
+    width: "auto",
+    padding: "40px"
+  }
 })
 
 const appPostionedTextContainer = css({
@@ -18,7 +24,11 @@ const appPostionedTextContainer = css({
   justifyContent: "space-around",
   alignItems: "center",
   width: "100%",
-  height: "100%"
+  height: "100%",
+
+  "@media only screen and (max-width:1174px)": {
+    flexDirection: "column",
+  }
 })
 
 const appPositionedText = css({
@@ -27,6 +37,13 @@ const appPositionedText = css({
   gap: "13px",
   borderRight: "1px solid #979797",
   padding: "0px 40px",
+
+  "@media only screen and (max-width:1174px)": {
+    padding: "0px",
+    border: "none",
+    width: "100%",
+    marginBottom: "24px"
+  },
 
   "&:last-child": {
     border: "none"
@@ -56,13 +73,14 @@ const appPositionedTextContent = css({
 
 const appPositionedContainer = css({
   display: "flex",
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
   width: "100%",
   position: "absolute",
   top: "70%",
   left: "0",
-  zIndex: "20"
+  zIndex: "20",
 })
 
 
